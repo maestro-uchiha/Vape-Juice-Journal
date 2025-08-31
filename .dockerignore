@@ -1,0 +1,17 @@
+﻿# Keep the build tiny—ship only the baked site + configs
+*
+!parametric-static/**
+!Dockerfile
+!nginx.conf
+
+# Exclude ASD helper scripts/backups and noise
+parametric-static/scripts/**
+parametric-static/scripts.__bak__*/
+.git/
+*.ps1
+*.bat
+*.cmd
+*.sh
+*.py
+.DS_Store
+Thumbs.db
